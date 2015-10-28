@@ -38,17 +38,12 @@
 				</menupopup>
 			</menu>
 		</menubar>
-		<checkbox label="Vertical orient">
-			<attribute name="onCheck">
-			menubar.orient= self.checked ? "vertical" : "horizontal";
-		</attribute>
-	</checkbox>
-	<checkbox label="Autodrop" if="true">
-		<attribute name="onCheck">
-			menubar.autodrop = self.checked;
-		</attribute>
-	</checkbox>
 
-
+		<image src="C:/Users/admin/Desktop/casa.jpg" />
+		<button label="contactenos" onClick="" />
+		<div>
+			<label
+				value="esta casa cuenta con 3 alcobas, 1 sala, 1 comedor , 2 banos " />
+		</div>
 	</window>
 </zk>
