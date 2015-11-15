@@ -1,33 +1,106 @@
 <?page title="inicio" contentType="text/html;charset=UTF-8"?>
-<zk>
-	<window title="inicio" border="normal" apply="com.mym.webapp.Ctl.inicioCtl">
-
-		<menubar id="menubar" hflex="min">
+<zk> 
+<borderlayout style="">
+<north height="5%" style="background:#8BC34A">
+				<combobox style="float:right">
+	    			<comboitem label=""/><comboitem label="${labels.lblIngles}" image="/Iconos/us.png"/>
+	    			<comboitem label=""/><comboitem label="${labels.lblEspaniol}" image="/Iconos/es.png"/>
+	    			<comboitem label=""/><comboitem label="${labels.lblFrances}" image="/Iconos/fr.png"/>
+	    		</combobox>
+</north>
+<center>
+	<borderlayout sclass="complex-layout" height="450px" apply="com.mym.webapp.Ctl.inicioCtl">
+	
+<north size="10%" style="background:#FF9800">
+	<hlayout>
+	    <image src="/Imagenes/Logo.jpg" height="50px"></image>
+	    <label value="M y M Con toda propiedad" style="font-size:20px " />
+	    		
+	    <div style="float:center">
+	    <menubar id="menubar" width="100%" style="background:#FF9800">
 			<custom-attributes org.zkoss.zul.image.preload="true" />
-			<menu label="Quienes Somos" image="/maison.png">
+			<menuitem label="${labels.lblHome}" image="/Iconos/home.png"/>
+			<menuitem label="${labels.lblQuienesSomos}" image="/Iconos/question.png"/>
+			<menu label="${labels.lblPropiedades}">
 				<menupopup>
-					<menuitem image="/maison.png" label="Mision" onClick="alert(self.label)" />
-					<menuitem image="/maison.png" label="Vision" onClick="alert(self.label)" />
-					<menuitem image="/maison.png" label="Valores" onClick="alert(self.label)" />
-					<menuseparator />
-					<menuitem label="Exit" image="/maison.png" onClick="alert(self.label)" />
-				</menupopup>
-			</menu>
-			<menu label="Propiedades" image="/maison.png">
-				<menupopup>
-					<menuitem label="Venta" onClick="alert(self.label)" />
-					<menu label="Arrendamiento">
+					<menu label="${labels.lblVentas}" onClick="alert(self.label)">
 						<menupopup>
-							<menuitem label="Casas" onClick="alert(self.label)" />
-							<menuitem label="Apartamentos" onClick="alert(self.label)" />
+							<menuitem image="/Iconos/house.png" label="${labels.lblCasas}" onClick="alert(self.label)" />
+							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}" onClick="alert(self.label)" />
+							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}" onClick="alert(self.label)" />
+							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}" onClick="alert(self.label)" />
+						</menupopup>
+					</menu>
+					<menu label="${labels.lblArrendamientos}">
+						<menupopup>
+							<menuitem image="/Iconos/house.png" label="${labels.lblCasas}" onClick="alert(self.label)" />
+							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}" onClick="alert(self.label)" />
+							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}" onClick="alert(self.label)" />
+							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}" onClick="alert(self.label)" />
 						</menupopup>
 					</menu>
 				</menupopup>
 			</menu>
+			<menuitem label="${labels.lblBusquedaAvanzada}" image="/Iconos/houseS.png"/>
+			<menuitem label="${labels.lblContacto}" image="/Iconos/telephone.png"/>
 		</menubar>
-		<image src="/casa.jpg" />
-		<button label="Informacion adicional" onClick="" />
+		</div>
+	    
+</hlayout>
 
-	</window>
+</north>
+<center>	
+<groupbox> 
+	<grid>
+		<columns>
+			<column label=""/>
+			<column label=""/>
+			<column label=""/>
+			<column label=""/>
+		</columns>
+		<rows>
+			<row>	
+			<image src="/Imagenes/casa.jpg" />
+				<separator/>
+				<label value="Ventas" />
+			</row>
+		</rows>
+	</grid>
+				
+	
+</groupbox> 
+</center>
+	
+		<west title="${labels.lblBusqueda}" size="20%" flex="true" maxsize="250" splittable="true" collapsible="true">
+                <div style="background:#8B5A2B">
+                    <label value="${labels.lblBusqueda}"
+                        style="color:white;font-size:50px" />
+                </div>
+        </west>
+      <south>
+      	<vlayout style="background:#8B5A2B" >
+      		<label id="lblFooter1" value="${labels.lblFooter1}" />
+      		<label id="lblFooter2" value="${labels.lblFooter2}" />
+      	</vlayout>      
+      </south>
+</borderlayout>
+</center>
+<west size="15%" >
+	<borderlayout>
+	 	<north size="10%" style="background:#FF9800">
+	 	</north>
+	 	<south size="90%" style="background:#8BC34A">
+	 	</south>
+	</borderlayout>
+</west>
+<east size="15%" >
+	<borderlayout>
+	 	<north size="10%" style="background:#FF9800">
+	 	</north>
+	 	<south size="90%" style="background:#8BC34A">
+	 	</south>
+	</borderlayout>
+</east>
+</borderlayout>
 </zk>
 
