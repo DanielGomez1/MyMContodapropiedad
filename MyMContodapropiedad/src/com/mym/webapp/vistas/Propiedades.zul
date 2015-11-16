@@ -1,9 +1,10 @@
 <?page title="Propiedades" contentType="text/html;charset=UTF-8"?>
 <zk>
-<include></include>
-<borderlayout  sclass="complex-layout"  apply="com.mym.webapp.Ctl.inicioCtl">
-<north height="5%" style="background:#8BC34A">
-				<hlayout style="float:right">
+	<include></include>
+	<borderlayout sclass="complex-layout"
+		apply="com.mym.webapp.Ctl.inicioCtl">
+		<north height="5%" style="background:#8BC34A">
+			<hlayout style="float:right">
 				<button label="Adm">
 					<attribute name="onClick">
 					Executions.sendRedirect("aniadirPropiedad.zul");
@@ -42,27 +43,27 @@
 					Executions.sendRedirect("Propiedades.zul");
 				</attribute>
 				<menupopup>
-					<menu label="${labels.lblVentas}" onClick="alert(self.label)" style="background:#FF9800" >
+					<menu label="${labels.lblVentas}"  style="background:#FF9800" >
 						<attribute name="onClick">
 							Executions.sendRedirect("Propiedades.zul");
 						</attribute>
 						<menupopup>
-							<menuitem image="/Iconos/house.png" label="${labels.lblCasas}" onClick="alert(self.label)" style="background:#FF9800">
+							<menuitem image="/Iconos/house.png" label="${labels.lblCasas}"  style="background:#FF9800">
 								<attribute name="onClick">
 									Executions.sendRedirect("Propiedades.zul");
 								</attribute>
 							</menuitem>
-							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}" onClick="alert(self.label)" style="background:#FF9800">
+							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}"  style="background:#FF9800">
 								<attribute name="onClick">
 									Executions.sendRedirect("Propiedades.zul");
 								</attribute>
 							</menuitem>
-							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}" onClick="alert(self.label)" style="background:#FF9800">
+							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}"  style="background:#FF9800">
 								<attribute name="onClick">
 									Executions.sendRedirect("Propiedades.zul");
 								</attribute>
 							</menuitem>
-							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}" onClick="alert(self.label)" style="background:#FF9800">
+							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}"  style="background:#FF9800">
 								<attribute name="onClick">
 									Executions.sendRedirect("Propiedades.zul");
 								</attribute>
@@ -79,17 +80,17 @@
 									Executions.sendRedirect("Propiedades.zul");
 								</attribute>
 							</menuitem>
-							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}" onClick="alert(self.label)" style="background:#FF9800">
+							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}"  style="background:#FF9800">
 								<attribute name="onClick">
 									Executions.sendRedirect("Propiedades.zul");
 								</attribute>
 							</menuitem>
-							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}" onClick="alert(self.label)" style="background:#FF9800">
+							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}"  style="background:#FF9800">
 								<attribute name="onClick">
 									Executions.sendRedirect("Propiedades.zul");
 								</attribute>
 							</menuitem>
-							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}" onClick="alert(self.label)" style="background:#FF9800">
+							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}"  style="background:#FF9800">
 								<attribute name="onClick">
 									Executions.sendRedirect("Propiedades.zul");
 								</attribute>
