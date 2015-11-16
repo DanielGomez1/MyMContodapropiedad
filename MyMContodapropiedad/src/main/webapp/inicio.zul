@@ -8,7 +8,7 @@
 	    			<comboitem label=""/><comboitem label="${labels.lblFrances}" image="/Iconos/fr.png"/>
 	    		</combobox>
 </north>
-<center>
+<center autoscroll="true">
 	<borderlayout>
 	
 <north size="5%" style="background:#FF9800">
@@ -21,7 +21,7 @@
 			<custom-attributes org.zkoss.zul.image.preload="true" />
 			<menuitem label="${labels.lblHome}" image="/Iconos/home.png" style="background:#FF9800;font-size:20px">
 				<attribute name="onClick">
-					Executions.sendRedirect("Propiedades.zul");
+					Executions.sendRedirect("inicio.zul");
 				</attribute>
 			</menuitem>
 			<menuitem label="${labels.lblQuienesSomos}" image="/Iconos/question.png" style="background:#FF9800">
@@ -31,7 +31,7 @@
 			</menuitem>
 			<menu label="${labels.lblPropiedades}" style="background:#FF9800" >
 				<attribute name="onClick">
-					Executions.sendRedirect("WEB.INF/Propiedades.zul");
+					Executions.sendRedirect("Propiedades.zul");
 				</attribute>
 				<menupopup>
 					<menu label="${labels.lblVentas}" onClick="alert(self.label)" style="background:#FF9800" >
@@ -106,7 +106,7 @@
 </hlayout>
 
 </north>
-<center autoscroll="true">	
+<center>	
 <groupbox> 
 	<grid>
 		<columns>

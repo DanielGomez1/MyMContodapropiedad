@@ -1,6 +1,7 @@
-<?page title="inicio" contentType="text/html;charset=UTF-8"?>
+<?page title="Propiedades" contentType="text/html;charset=UTF-8"?>
 <zk>
-<borderlayout  sclass="complex-layout"  apply="com.mym.webapp.Ctl.inicioCtl" >
+<include></include>
+<borderlayout  sclass="complex-layout"  apply="com.mym.webapp.Ctl.inicioCtl">
 <north height="5%" style="background:#8BC34A">
 				<combobox id="cmbIdioma" style="float:right">
 	    			<comboitem label=""/><comboitem label="${labels.lblIngles}" image="/Iconos/us.png"/>
@@ -31,7 +32,7 @@
 			</menuitem>
 			<menu label="${labels.lblPropiedades}" style="background:#FF9800" >
 				<attribute name="onClick">
-					Executions.sendRedirect("WEB.INF/Propiedades.zul");
+					Executions.sendRedirect("Propiedades.zul");
 				</attribute>
 				<menupopup>
 					<menu label="${labels.lblVentas}" onClick="alert(self.label)" style="background:#FF9800" >
@@ -102,34 +103,18 @@
 			</menuitem>
 		</menubar>
 		</div>
-	    
 </hlayout>
 
 </north>
-<center autoscroll="true">	
-<groupbox> 
-	<grid>
-		<columns>
-			<column label="" width="30%"/>
-			<column label="" width="70%"/>
-		</columns>
-		<rows>
-			<row>	
-			<image src="/Imagenes/casa.jpg" />
-			<label value="Ventas" />
-			</row>
-		</rows>
-	</grid>
-				
-	
-</groupbox> 
+<center>	
+
 </center>
 	
 		<west title="${labels.lblBusqueda}" size="20%" flex="true" maxsize="250" splittable="true" collapsible="true">
                 <groupbox> 
                 	<vlayout>
                 	
-                		<label value="Busqueda" style="font-size:20px;color:#8BC34A "/>
+                		<label value="Busqueda" style="font-size:20px;color:#8BC34A " />
                 		<separator/>
                 			<label value="Proposito: " />
                 		<hlayout>
@@ -169,7 +154,6 @@
 	 	</north>
 	 	<south size="90%" style="background:#8BC34A">
 	 	</south>
-	 	 
 	</borderlayout>
 </west>
 <east size="15%" >
@@ -182,4 +166,3 @@
 </east>
 </borderlayout>
 </zk>
-

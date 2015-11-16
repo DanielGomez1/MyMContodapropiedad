@@ -1,0 +1,127 @@
+<?page title="MyMContodapropiedad" contentType="text/html;charset=UTF-8"?>
+<zk>
+<borderlayout  sclass="complex-layout"  apply="com.mym.webapp.Ctl.inicioCtl" >
+<north height="5%" style="background:#8BC34A">
+				<combobox id="cmbIdioma" style="float:right">
+	    			<comboitem label=""/><comboitem label="${labels.lblIngles}" image="/Iconos/us.png"/>
+	    			<comboitem label=""/><comboitem label="${labels.lblEspaniol}" image="/Iconos/es.png"/>
+	    			<comboitem label=""/><comboitem label="${labels.lblFrances}" image="/Iconos/fr.png"/>
+	    		</combobox>
+</north>
+<center autoscroll="true">
+	<borderlayout>
+	
+<north size="5%" style="background:#FF9800">
+	<hlayout>
+	    <image src="/Imagenes/Logo.jpg" height="50px"></image>
+	    <label value="M y M Con toda propiedad" style="font-size:20px " />
+	    		
+	    <div class="menu">
+	    <menubar id="menubar" width="100%" style="background:#FF9800" >
+			<custom-attributes org.zkoss.zul.image.preload="true" />
+			<menuitem label="${labels.lblHome}" image="/Iconos/home.png" style="background:#FF9800;font-size:20px" />
+			<menuitem label="${labels.lblQuienesSomos}" image="/Iconos/question.png" style="background:#FF9800" />
+			<menu label="${labels.lblPropiedades}" style="background:#FF9800" >
+				<menupopup>
+					<menu label="${labels.lblVentas}" onClick="alert(self.label)" style="background:#FF9800" >
+						<menupopup>
+							<menuitem image="/Iconos/house.png" label="${labels.lblCasas}" onClick="alert(self.label)" style="background:#FF9800" />
+							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}" onClick="alert(self.label)" style="background:#FF9800" />
+							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}" onClick="alert(self.label)" style="background:#FF9800" />
+							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}" onClick="alert(self.label)" style="background:#FF9800" />
+						</menupopup>
+					</menu>
+					</attribute> <menu label="${labels.lblArrendamientos}" style="background:#FF9800" >
+						<menupopup>
+							<menuitem image="/Iconos/house.png" label="${labels.lblCasas}" onClick="alert(self.label)" style="background:#FF9800" />
+							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}" onClick="alert(self.label)" style="background:#FF9800" />
+							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}" onClick="alert(self.label)" style="background:#FF9800" />
+							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}" onClick="alert(self.label)" style="background:#FF9800" />
+						</menupopup>
+					</menu>
+				</menupopup>
+			</menu>
+			<menuitem label="${labels.lblBusquedaAvanzada}" image="/Iconos/houseS.png" style="background:#FF9800" />
+			<menuitem label="${labels.lblContacto}" image="/Iconos/telephone.png" style="background:#FF9800" />
+		</menubar>
+		</div>
+	    
+</hlayout>
+
+</north>
+<center>	
+<groupbox> 
+	<grid>
+		<columns>
+			<column label="" width="30%"/>
+			<column label="" width="70%"/>
+		</columns>
+		<rows>
+			<row>	
+			<image src="/Imagenes/casa.jpg" />
+			<label value="Ventas" />
+			</row>
+		</rows>
+	</grid>
+				
+	
+</groupbox> 
+</center>
+	
+		<west title="${labels.lblBusqueda}" size="20%" flex="true" maxsize="250" splittable="true" collapsible="true">
+                <groupbox> 
+                	<vlayout>
+                	
+                		<label value="Busqueda" style="font-size:20px;color:#8BC34A " />
+                		<separator/>
+                			<label value="Proposito: " />
+                		<hlayout>
+                			<radiogroup>
+                			<radio label="Venta"/>
+                			<radio label="Arriendo"/>
+                			</radiogroup>
+                		</hlayout>
+                		<separator/>
+                		<label value="Tipo de propiedad:  " />
+                			<radiogroup orient="vertical">
+                			<radio label="Casa"/>
+                			<radio label="Apartemento"/>
+                			<radio label="Local"/>
+                			<radio label="lote"/>
+                			</radiogroup>
+                		<separator/>                 			
+                		<textbox value="Precio Maximo"/>
+                		<textbox value="Precio Minimo"/>
+                		<textbox value="Codigo"/>
+                		<separator/>
+                		<button label="Buscar" onClick="" style="background:#8BC34A" width="100%"/>	
+                	</vlayout>
+                </groupbox>
+        </west>
+      <south>
+      	<vlayout style="background:#8B5A2B" >
+      		<label id="lblFooter1" value="${labels.lblFooter1}" />
+      		<label id="lblFooter2" value="${labels.lblFooter2}" />
+      	</vlayout>      
+      </south>
+</borderlayout>
+</center>
+<west size="15%" >
+	<borderlayout>
+	 	<north size="10%" style="background:#FF9800">
+	 	</north>
+	 	<south size="90%" style="background:#8BC34A">
+	 	</south>
+	</borderlayout>
+</west>
+<east size="15%" >
+	<borderlayout>
+	 	<north size="10%" style="background:#FF9800">
+	 	</north>
+	 	<south size="90%" style="background:#8BC34A">
+	 	</south>
+	</borderlayout>
+</east>
+</borderlayout>
+</zk>
+</zk>
