@@ -1,22 +1,14 @@
-<?page title="Propiedades" contentType="text/html;charset=UTF-8"?>
+<?page title="inicio" contentType="text/html;charset=UTF-8"?>
 <zk>
-<include></include>
-<borderlayout  sclass="complex-layout"  apply="com.mym.webapp.Ctl.inicioCtl">
+<borderlayout  sclass="complex-layout"  apply="com.mym.webapp.Ctl.inicioCtl" >
 <north height="5%" style="background:#8BC34A">
-				<hlayout style="float:right">
-				<button label="Adm">
-					<attribute name="onClick">
-					Executions.sendRedirect("aniadirPropiedad.zul");
-					</attribute>
-				</button>
 				<combobox id="cmbIdioma" style="float:right">
 	    			<comboitem label=""/><comboitem label="${labels.lblIngles}" image="/Iconos/us.png"/>
 	    			<comboitem label=""/><comboitem label="${labels.lblEspaniol}" image="/Iconos/es.png"/>
 	    			<comboitem label=""/><comboitem label="${labels.lblFrances}" image="/Iconos/fr.png"/>
 	    		</combobox>
-	 </hlayout>
 </north>
-<center>
+<center autoscroll="true">
 	<borderlayout>
 	
 <north size="5%" style="background:#FF9800">
@@ -34,7 +26,7 @@
 			</menuitem>
 			<menuitem label="${labels.lblQuienesSomos}" image="/Iconos/question.png" style="background:#FF9800">
 				<attribute name="onClick">
-					Executions.sendRedirect("quienesSomos.zul");
+					Executions.sendRedirect("Propiedades.zul");
 				</attribute>
 			</menuitem>
 			<menu label="${labels.lblPropiedades}" style="background:#FF9800" >
@@ -105,45 +97,61 @@
 			</menuitem>
 			<menuitem label="${labels.lblContacto}" image="/Iconos/telephone.png" style="background:#FF9800">
 			<attribute name="onClick">
-					Executions.sendRedirect("contacto.zul");
+					Executions.sendRedirect("Propiedades.zul");
 				</attribute>
 			</menuitem>
 		</menubar>
 		</div>
+	    
 </hlayout>
 
 </north>
 <center>	
-
+<groupbox> 
+	<grid>
+		<columns>
+			<column label="" width="30%"/>
+			<column label="" width="70%"/>
+		</columns>
+		<rows>
+			<row>	
+			<image src="/Imagenes/casa.jpg" />
+			<label value="Ventas" />
+			</row>
+		</rows>
+	</grid>
+				
+	
+</groupbox> 
 </center>
 	
 		<west title="${labels.lblBusqueda}" size="20%" flex="true" maxsize="250" splittable="true" collapsible="true">
                 <groupbox> 
                 	<vlayout>
                 	
-                		<label value="${labels.lblBusqueda}" style="font-size:20px;color:#8BC34A "/>
+                		<label value="Busqueda" style="font-size:20px;color:#8BC34A "/>
                 		<separator/>
-                			<label value="${labels.lblProposito}" />
+                			<label value="Proposito: " />
                 		<hlayout>
                 			<radiogroup>
-                			<radio label="${labels.lblVenta}"/>
-                			<radio label="${labels.lblArriendo}"/>
+                			<radio label="Venta"/>
+                			<radio label="Arriendo"/>
                 			</radiogroup>
                 		</hlayout>
                 		<separator/>
-                		<label value="${labels.lblTipoDePropiedad}" />
+                		<label value="Tipo de propiedad:  " />
                 			<radiogroup orient="vertical">
-                			<radio label="${labels.lblCasa}"/>
-                			<radio label="${labels.lblApartamento}"/>
-                			<radio label="${labels.lblLocal}"/>
-                			<radio label="${labels.lblLote}"/>
+                			<radio label="Casa"/>
+                			<radio label="Apartemento"/>
+                			<radio label="Local"/>
+                			<radio label="lote"/>
                 			</radiogroup>
                 		<separator/>                 			
-                		<textbox value="${labels.lblPrecioMaximo}"/>
-                		<textbox value="${labels.lblPrecioMinimo}"/>
-                		<textbox value="${labels.lblCodigo}"/>
+                		<textbox value="Precio Maximo"/>
+                		<textbox value="Precio Minimo"/>
+                		<textbox value="Codigo"/>
                 		<separator/>
-                		<button label="${labels.lblBuscar}" onClick="" style="background:#8BC34A" width="100%"/>	
+                		<button label="Buscar" onClick="" style="background:#8BC34A" width="100%"/>	
                 	</vlayout>
                 </groupbox>
         </west>
@@ -161,6 +169,7 @@
 	 	</north>
 	 	<south size="90%" style="background:#8BC34A">
 	 	</south>
+	 	 
 	</borderlayout>
 </west>
 <east size="15%" >
@@ -173,3 +182,4 @@
 </east>
 </borderlayout>
 </zk>
+

@@ -136,29 +136,29 @@
                 <groupbox> 
                 	<vlayout>
                 	
-                		<label value="Busqueda" style="font-size:20px;color:#8BC34A "/>
+                		<label value="${labels.lblBusqueda}" style="font-size:20px;color:#8BC34A "/>
                 		<separator/>
-                			<label value="Proposito: " />
+                			<label value="${labels.lblProposito}" />
                 		<hlayout>
                 			<radiogroup>
-                			<radio label="Venta"/>
-                			<radio label="Arriendo"/>
+                			<radio label="${labels.lblVenta}"/>
+                			<radio label="${labels.lblArriendo}"/>
                 			</radiogroup>
                 		</hlayout>
                 		<separator/>
-                		<label value="Tipo de propiedad:  " />
+                		<label value="${labels.lblTipoDePropiedad}" />
                 			<radiogroup orient="vertical">
-                			<radio label="Casa"/>
-                			<radio label="Apartemento"/>
-                			<radio label="Local"/>
-                			<radio label="lote"/>
+                			<radio label="${labels.lblCasa}"/>
+                			<radio label="${labels.lblApartamento}"/>
+                			<radio label="${labels.lblLocal}"/>
+                			<radio label="${labels.lblLote}"/>
                 			</radiogroup>
                 		<separator/>                 			
-                		<textbox value="Precio Maximo"/>
-                		<textbox value="Precio Minimo"/>
-                		<textbox value="Codigo"/>
+                		<textbox value="${labels.lblPrecioMaximo}"/>
+                		<textbox value="${labels.lblPrecioMinimo}"/>
+                		<textbox value="${labels.lblCodigo}"/>
                 		<separator/>
-                		<button label="Buscar" onClick="" style="background:#8BC34A" width="100%"/>	
+                		<button label="${labels.lblBuscar}" onClick="" style="background:#8BC34A" width="100%"/>	
                 	</vlayout>
                 </groupbox>
         </west>
