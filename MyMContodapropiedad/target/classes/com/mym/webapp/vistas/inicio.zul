@@ -2,11 +2,18 @@
 <zk>
 <borderlayout  sclass="complex-layout"  apply="com.mym.webapp.Ctl.inicioCtl" >
 <north height="5%" style="background:#8BC34A">
+	<hlayout style="float:right">
+				<button label="Adm">
+					<attribute name="onClick">
+					Executions.sendRedirect("aniadirPropiedad.zul");
+					</attribute>
+				</button>
 				<combobox id="cmbIdioma" style="float:right">
 	    			<comboitem label=""/><comboitem label="${labels.lblIngles}" image="/Iconos/us.png"/>
 	    			<comboitem label=""/><comboitem label="${labels.lblEspaniol}" image="/Iconos/es.png"/>
 	    			<comboitem label=""/><comboitem label="${labels.lblFrances}" image="/Iconos/fr.png"/>
 	    		</combobox>
+	 </hlayout>
 </north>
 <center>
 	<borderlayout>
@@ -17,21 +24,21 @@
 	    <label value="M y M Con toda propiedad" style="font-size:20px " />
 	    		
 	    <div class="menu">
-	    <menubar id="menubar" width="100%" style="background:#FF9800" >
+	     <menubar id="menubar" width="100%" style="background:#FF9800" >
 			<custom-attributes org.zkoss.zul.image.preload="true" />
 			<menuitem label="${labels.lblHome}" image="/Iconos/home.png" style="background:#FF9800;font-size:20px">
 				<attribute name="onClick">
-					Executions.sendRedirect("Propiedades.zul");
+					Executions.sendRedirect("inicio.zul");
 				</attribute>
 			</menuitem>
 			<menuitem label="${labels.lblQuienesSomos}" image="/Iconos/question.png" style="background:#FF9800">
 				<attribute name="onClick">
-					Executions.sendRedirect("Propiedades.zul");
+					Executions.sendRedirect("quienesSomos.zul");
 				</attribute>
 			</menuitem>
 			<menu label="${labels.lblPropiedades}" style="background:#FF9800" >
 				<attribute name="onClick">
-					Executions.sendRedirect("WEB.INF/Propiedades.zul");
+					Executions.sendRedirect("Propiedades.zul");
 				</attribute>
 				<menupopup>
 					<menu label="${labels.lblVentas}" onClick="alert(self.label)" style="background:#FF9800" >
@@ -92,12 +99,12 @@
 			</menu>
 			<menuitem label="${labels.lblBusquedaAvanzada}" image="/Iconos/houseS.png" style="background:#FF9800">
 			<attribute name="onClick">
-					Executions.sendRedirect("Propiedades.zul");
+					Executions.sendRedirect("busquedaAvanzada.zul");
 				</attribute>
 			</menuitem>
 			<menuitem label="${labels.lblContacto}" image="/Iconos/telephone.png" style="background:#FF9800">
 			<attribute name="onClick">
-					Executions.sendRedirect("Propiedades.zul");
+					Executions.sendRedirect("contacto.zul");
 				</attribute>
 			</menuitem>
 		</menubar>

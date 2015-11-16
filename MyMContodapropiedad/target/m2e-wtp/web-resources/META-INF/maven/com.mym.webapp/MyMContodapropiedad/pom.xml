@@ -76,7 +76,6 @@
 			<artifactId>zweb</artifactId>
 			<version>7.0.3</version>
 		</dependency>
-
 	</dependencies>
 	<build>
 		<finalName>MyMContodapropiedad</finalName>

@@ -1,6 +1,191 @@
 <?page title="new page title" contentType="text/html;charset=UTF-8"?>
 <zk>
-<window title="new page title" border="normal">
-New Content Here!
-</window>
+<borderlayout  sclass="complex-layout"  apply="com.mym.webapp.Ctl.inicioCtl" >
+<north height="5%" style="background:#8BC34A">
+				<hlayout style="float:right">
+				<button label="Adm">
+					<attribute name="onClick">
+					Executions.sendRedirect("aniadirPropiedad.zul");
+					</attribute>
+				</button>
+				<combobox id="cmbIdioma" style="float:right">
+	    			<comboitem label=""/><comboitem label="${labels.lblIngles}" image="/Iconos/us.png"/>
+	    			<comboitem label=""/><comboitem label="${labels.lblEspaniol}" image="/Iconos/es.png"/>
+	    			<comboitem label=""/><comboitem label="${labels.lblFrances}" image="/Iconos/fr.png"/>
+	    		</combobox>
+	 </hlayout>
+</north>
+<center>
+	<borderlayout>
+	
+<north size="5%" style="background:#FF9800">
+	<hlayout>
+	    <image src="/Imagenes/Logo2.jpg" height="50px"></image>
+	    <label value="M y M Con toda propiedad" style="font-size:20px " />
+	    		
+	    <div class="menu">
+	    <menubar id="menubar" width="100%" style="background:#FF9800" >
+			<custom-attributes org.zkoss.zul.image.preload="true" />
+			<menuitem label="${labels.lblHome}" image="/Iconos/home.png" style="background:#FF9800;font-size:20px">
+				<attribute name="onClick">
+					Executions.sendRedirect("inicio.zul");
+				</attribute>
+			</menuitem>
+			<menuitem label="${labels.lblQuienesSomos}" image="/Iconos/question.png" style="background:#FF9800">
+				<attribute name="onClick">
+					Executions.sendRedirect("quienesSomos.zul");
+				</attribute>
+			</menuitem>
+			<menu label="${labels.lblPropiedades}" style="background:#FF9800" >
+				<attribute name="onClick">
+					Executions.sendRedirect("Propiedades.zul");
+				</attribute>
+				<menupopup>
+					<menu label="${labels.lblVentas}" onClick="alert(self.label)" style="background:#FF9800" >
+						<attribute name="onClick">
+							Executions.sendRedirect("Propiedades.zul");
+						</attribute>
+						<menupopup>
+							<menuitem image="/Iconos/house.png" label="${labels.lblCasas}" onClick="alert(self.label)" style="background:#FF9800">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}" onClick="alert(self.label)" style="background:#FF9800">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}" onClick="alert(self.label)" style="background:#FF9800">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}" onClick="alert(self.label)" style="background:#FF9800">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+						</menupopup>
+					</menu>
+					<menu label="${labels.lblArrendamientos}" style="background:#FF9800" >
+						<attribute name="onClick">
+							Executions.sendRedirect("Propiedades.zul");
+						</attribute>			
+						<menupopup>
+							<menuitem image="/Iconos/house.png" label="${labels.lblCasas}" onClick="alert(self.label)" style="background:#FF9800">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}" onClick="alert(self.label)" style="background:#FF9800">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}" onClick="alert(self.label)" style="background:#FF9800">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}" onClick="alert(self.label)" style="background:#FF9800">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+						</menupopup>
+					</menu>
+				</menupopup>
+			</menu>
+			<menuitem label="${labels.lblBusquedaAvanzada}" image="/Iconos/houseS.png" style="background:#FF9800">
+			<attribute name="onClick">
+					Executions.sendRedirect("busquedaAvanzada.zul");
+				</attribute>
+			</menuitem>
+			<menuitem label="${labels.lblContacto}" image="/Iconos/telephone.png" style="background:#FF9800">
+			<attribute name="onClick">
+					Executions.sendRedirect("contacto.zul");
+				</attribute>
+			</menuitem>
+		</menubar>
+		</div>
+	    
+</hlayout>
+
+</north>
+<center autoscroll="true">	
+<groupbox> 
+	<grid>
+		<columns>
+			<column label="" width="30%"/>
+			<column label="" width="70%"/>
+		</columns>
+		<rows>
+			<row>	
+			<image src="/Imagenes/casa.jpg" />
+			<label value="Ventas" />
+			</row>
+		</rows>
+	</grid>
+				
+	
+</groupbox> 
+</center>
+	
+		<west title="${labels.lblBusqueda}" size="20%" flex="true" maxsize="250" splittable="true" collapsible="true">
+                <groupbox> 
+                	<vlayout>
+                	
+                		<label value="Busqueda" style="font-size:20px;color:#8BC34A "/>
+                		<separator/>
+                			<label value="Proposito: " />
+                		<hlayout>
+                			<radiogroup>
+                			<radio label="Venta"/>
+                			<radio label="Arriendo"/>
+                			</radiogroup>
+                		</hlayout>
+                		<separator/>
+                		<label value="Tipo de propiedad:  " />
+                			<radiogroup orient="vertical">
+                			<radio label="Casa"/>
+                			<radio label="Apartemento"/>
+                			<radio label="Local"/>
+                			<radio label="lote"/>
+                			</radiogroup>
+                		<separator/>                 			
+                		<textbox value="Precio Maximo"/>
+                		<textbox value="Precio Minimo"/>
+                		<textbox value="Codigo"/>
+                		<separator/>
+                		<button label="Buscar" onClick="" style="background:#8BC34A" width="100%"/>	
+                	</vlayout>
+                </groupbox>
+        </west>
+      <south>
+      	<vlayout style="background:#8B5A2B" >
+      		<label id="lblFooter1" value="${labels.lblFooter1}" />
+      		<label id="lblFooter2" value="${labels.lblFooter2}" />
+      	</vlayout>      
+      </south>
+</borderlayout>
+</center>
+<west size="15%" >
+	<borderlayout>
+	 	<north size="10%" style="background:#FF9800">
+	 	</north>
+	 	<south size="90%" style="background:#8BC34A">
+	 	</south>
+	 	 
+	</borderlayout>
+</west>
+<east size="15%" >
+	<borderlayout>
+	 	<north size="10%" style="background:#FF9800">
+	 	</north>
+	 	<south size="90%" style="background:#8BC34A">
+	 	</south>
+	</borderlayout>
+</east>
+</borderlayout>
 </zk>
