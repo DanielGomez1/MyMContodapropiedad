@@ -20,7 +20,7 @@
 	
 	<north size="5%" style="background:#FF9800">
 			<hlayout>
-			    <image src="/Imagenes/Logo2.jpg" height="50px"></image>
+			    <image src="/Imagenes/Logo2.jpg" height="30px"></image>
 			    <label value="M y M Con toda propiedad" style="font-size:20px " />
 			    		
 			    <div class="menu">

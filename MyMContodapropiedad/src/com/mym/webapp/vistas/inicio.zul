@@ -8,10 +8,7 @@
 					Executions.sendRedirect("aniadirPropiedad.zul");
 					</attribute>
 				</button>
-				<combobox id="cmbIdioma" style="float:right">
-	    			<comboitem label=""/><comboitem label="${labels.lblIngles}" image="/Iconos/us.png"/>
-	    			<comboitem label=""/><comboitem label="${labels.lblEspaniol}" image="/Iconos/es.png"/>
-	    			<comboitem label=""/><comboitem label="${labels.lblFrances}" image="/Iconos/fr.png"/>
+				<combobox id="cmbIdioma" style="float:right"><comboitem label="${labels.lblIngles}" image="/Iconos/us.png"/><comboitem label="${labels.lblEspaniol}" image="/Iconos/es.png"/><comboitem label="${labels.lblFrances}" image="/Iconos/fr.png"/>
 	    		</combobox>
 	 </hlayout>
 </north>
@@ -20,7 +17,7 @@
 	
 <north size="5%" style="background:#FF9800">
 	<hlayout>
-	    <image src="/Imagenes/Logo2.jpg" height="50px"></image>
+	    <image src="/Imagenes/Logo2.jpg" height="30px"></image>
 	    <label value="M y M Con toda propiedad" style="font-size:20px " />
 	    		
 	    <div class="menu">
@@ -158,7 +155,7 @@
                 		<textbox value="${labels.lblPrecioMinimo}"/>
                 		<textbox value="${labels.lblCodigo}"/>
                 		<separator/>
-                		<button label="${labels.lblBuscar}" onClick="" style="background:#8BC34A" width="100%"/>	
+                		<button id="Buscar" label="${labels.lblBuscar}" onClick="" style="background:#8BC34A" width="100%"/>	
                 	</vlayout>
                 </groupbox>
         </west>
