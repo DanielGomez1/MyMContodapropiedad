@@ -10,11 +10,19 @@
 					Executions.sendRedirect("aniadirPropiedad.zul");
 					</attribute>
 				</button>
-				<combobox id="cmbIdioma" style="float:right">
-	    			<comboitem label=""/><comboitem label="${labels.lblIngles}" image="/Iconos/us.png"/>
-	    			<comboitem label=""/><comboitem label="${labels.lblEspaniol}" image="/Iconos/es.png"/>
-	    			<comboitem label=""/><comboitem label="${labels.lblFrances}" image="/Iconos/fr.png"/>
-	    		</combobox>
+				<radiogroup>
+				<attribute name="onCheck"><![CDATA[
+                String localeValue = self.getSelectedItem().getValue();
+                Locale prefer_locale = localeValue.length() > 2 ? 
+                        new Locale(localeValue.substring(0,2),localeValue.substring(3)) : new Locale(localeValue);
+                session.setAttribute(org.zkoss.web.Attributes.PREFERRED_LOCALE, prefer_locale);
+                session.setAttribute("Demo_Locale", self.getSelectedIndex());
+                execution.sendRedirect("");
+                ]]></attribute>
+				<radio value="en" image="/Iconos/us.png"/>
+				<radio value="es" image="/Iconos/es.png"/>
+				<radio value="fr" image="/Iconos/fr.png"/>
+				</radiogroup>
 	 </hlayout>
 </north>
 <center>
