@@ -3,7 +3,7 @@
 	<groupbox>
 		<vlayout>
 			<label value="${labels.lblBusqueda}"
-				style="font-size:20px;color:#8BC34A " />
+				style="font-size:20px;color:#FF1400 " />
 			<separator />
 			<label value="${labels.lblProposito}" />
 			<hlayout>
@@ -26,7 +26,7 @@
 			<textbox value="${labels.lblCodigo}" />
 			<separator />
 			<button label="${labels.lblBuscar}" onClick=""
-				style="background:#8BC34A" width="100%" />
+				style="background:#FF1400" width="100%" />
 		</vlayout>
 	</groupbox>
 </zk>

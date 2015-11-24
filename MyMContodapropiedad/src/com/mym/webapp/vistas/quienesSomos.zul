@@ -1,8 +1,8 @@
 <?page title="${labels.lblQuienesSomos}" contentType="text/html;charset=UTF-8"?>
-<zk>
+<zk xmlns:x="xhtml">
 	<borderlayout sclass="complex-layout"
 		apply="com.mym.webapp.Ctl.inicioCtl">
-		<north height="5%" style="background:#8BC34A">
+		<north height="5%" style="background:#F7F4F4">
 			<hlayout style="float:right">
 				<button label="Adm">
 					<attribute name="onClick">
@@ -27,25 +27,50 @@
 <center>
 	<borderlayout>
 	
-<north size="5%" style="background:#FF9800">
+<north size="5%" style="background:#FF1400">
 	<include mode="instant" src="Norte.zul" />
 </north>
 <center autoscroll="true">	
 <groupbox> 
-	<grid>
-		<columns>
-			<column label="" width="30%"/>
-			<column label="" width="70%"/>
-		</columns>
-		<rows>
-			<row>	
-			<image src="/Imagenes/casa.jpg" />
-			<label value="Ventas" />
-			</row>
-		</rows>
-	</grid>
-				
+
+<div class="container" xmlns:n="native">
+	<n:h1>MYM CON TODA PROPIEDAD</n:h1>
+	<n:p>
+		MYM CON TODA PROPIEDAD es una empresa 
+		que se desempeña actualmente como administradora de
+		bienes inmuebles en arrendamiento, realiza ventas,
+		avalúo e hipotecas. Constituida el 13 de abril de 1988.
+	</n:p>
 	
+</div>
+<div class="container" xmlns:n="native">
+	<n:h1>MISIÓN</n:h1 >
+	<n:p>
+		Somos una empresa de servicios de arrendamiento,
+		venta, avalúos e hipotecas de bienes inmuebles,
+  		fundamentada en la ética, el conocimiento, la experiencia
+   		y capacidad de nuestro recurso humano, con la tecnología apropiada,
+    	el servicio oportuno, con responsabilidad y una continua capacitación
+     	con las organizaciones que reúnen nuestro gremio.
+	</n:p>
+	
+</div>
+
+
+<div class="container" xmlns:n="native">
+	<n:h1>VISIÓN</n:h1>
+	<n:p>
+		MYM CON TODA PROPIEDAD para el año 2020,
+		será una empresa solida en la prestación de servicios de
+		arrendamientos, venta, avalúos e hipotecas de bienes inmuebles,
+		encaminada a conservar la permanencia y aumentar el crecimiento
+		en el mercado, a través de la satisfacción y confianza de nuestros
+		clientes, para obtener una mayor rentabilidad y ofrecer a sus colaboradores
+		un bienestar y desarrollo.
+	</n:p>
+</div>
+
+			
 </groupbox> 
 </center>
 	
@@ -62,18 +87,18 @@
 </center>
 <west size="15%" >
 	<borderlayout>
-	 	<north size="10%" style="background:#FF9800">
+	 	<north size="10%" style="background:#FF1400">
 	 	</north>
-	 	<south size="90%" style="background:#8BC34A">
+	 	<south size="90%" style="background:#F7F4F4">
 	 	</south>
 	 	 
 	</borderlayout>
 </west>
 <east size="15%" >
 	<borderlayout>
-	 	<north size="10%" style="background:#FF9800">
+	 	<north size="10%" style="background:#FF1400">
 	 	</north>
-	 	<south size="90%" style="background:#8BC34A">
+	 	<south size="90%" style="background:#F7F4F4">
 	 	</south>
 	</borderlayout>
 </east>

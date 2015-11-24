@@ -2,7 +2,7 @@
 <zk>
 	<borderlayout sclass="complex-layout"
 		apply="com.mym.webapp.Ctl.inicioCtl">
-		<north height="5%" style="background:#8BC34A">
+		<north height="5%" style="background:#F7F4F4">
 			<hlayout style="float:right">
 				<button label="Adm">
 					<attribute name="onClick">
@@ -27,7 +27,7 @@
 <center>
 	<borderlayout>
 	
-	<north size="5%" style="background:#FF9800">
+	<north size="5%" style="background:#FF1400">
 			<include mode="instant" src="Norte.zul" />
 	</north>
 <center>
@@ -109,18 +109,18 @@
 
 <west size="15%" >
 	<borderlayout>
-	 	<north size="10%" style="background:#FF9800">
+	 	<north size="10%" style="background:#FF1400">
 	 	</north>
-	 	<south size="90%" style="background:#8BC34A">
+	 	<south size="90%" style="background:#F4F4F4">
 	 	</south>
 	</borderlayout>
 </west>
 
 <east size="15%" >
 	<borderlayout>
-	 	<north size="10%" style="background:#FF9800">
+	 	<north size="10%" style="background:#FF1400">
 	 	</north>
-	 	<south size="90%" style="background:#8BC34A">
+	 	<south size="90%" style="background:#F4F4F4">
 	 	</south>
 	</borderlayout>
 </east>

@@ -2,7 +2,7 @@
 <zk>
 	<borderlayout sclass="complex-layout"
 		apply="com.mym.webapp.Ctl.inicioCtl">
-		<north height="5%" style="background:#8BC34A">
+		<north height="5%" style="background:#F7F4F4">
 			<hlayout style="float:right">
 				<button label="Adm">
 					<attribute name="onClick">
@@ -25,24 +25,42 @@
 	 	</hlayout>
 </north>
 <center>
+
+
 	<borderlayout>
 	
-<north size="5%" style="background:#FF9800">
+<north size="5%" style="background:#FF1400">
 	<include mode="instant" src="Norte.zul" />
 </north>
 <center autoscroll="true">	
 <groupbox> 
 	<grid>
-		<columns>
-			<column label="" width="30%"/>
-			<column label="" width="70%"/>
-		</columns>
-		<rows>
-			<row>	
-			<image src="/Imagenes/casa.jpg" />
-			<label value="Ventas" />
-			</row>
-		</rows>
+	
+	
+          <rows> 
+		<row>
+                    <label value="Nombre interesado" width="150px" />
+                    <hlayout>
+                        <textbox value="@bind(fx.userName)"
+                            width="150px" tabindex="1" />
+                    </hlayout>
+                    <div>
+                        <label sclass="hightlight">ingrese el nombre de la persona que esta interesada</label>
+                    </div>                  
+                </row>
+                
+                <row>
+                    <label value="Nombre interesado" width="150px" />
+                    <hlayout>
+                        <textbox value="@bind(fx.userName)"
+                            width="150px" tabindex="1" />
+                    </hlayout>
+                    <div>
+                        <label sclass="hightlight">ingrese el nombre de la persona que esta interesada</label>
+                    </div>                  
+                </row>
+                
+		</rows> 
 	</grid>
 				
 	
@@ -63,18 +81,18 @@
 </center>
 <west size="15%" >
 	<borderlayout>
-	 	<north size="10%" style="background:#FF9800">
+	 	<north size="10%" style="background:#FF1400">
 	 	</north>
-	 	<south size="90%" style="background:#8BC34A">
+	 	<south size="90%" style="background:#F4F4F4">
 	 	</south>
 	 	 
 	</borderlayout>
 </west>
 <east size="15%" >
 	<borderlayout>
-	 	<north size="10%" style="background:#FF9800">
+	 	<north size="10%" style="background:#FF1400">
 	 	</north>
-	 	<south size="90%" style="background:#8BC34A">
+	 	<south size="90%" style="background:#F4F4F4">
 	 	</south>
 	</borderlayout>
 </east>

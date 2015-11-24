@@ -2,7 +2,7 @@
 <zk>
 	<borderlayout sclass="complex-layout"
 		apply="com.mym.webapp.Ctl.inicioCtl">
-		<north height="5%" style="background:#8BC34A">
+		<north height="5%" style="background:#F7F4F4">
 			<hlayout style="float:right">
 				<button label="Adm">
 					<attribute name="onClick">
@@ -27,11 +27,13 @@
 <center>
 	<borderlayout>
 	
-<north size="5%" style="background:#FF9800">
+<north size="5%" style="background:#FF1400">
 	<include mode="instant" src="Norte.zul" />
 </north>
 <center autoscroll="true">	
 <groupbox> 
+<image src="Imagenes/top5.gif"/>
+
 	<grid>
 		<columns>
 			<column label="" width="30%"/>
@@ -39,9 +41,11 @@
 		</columns>
 		<rows>
 			<row>	
-		
-			<image src="Imagenes/interior1.png" />
 			
+		    <div>
+		    
+			<image  src="Imagenes/interior1.png" height="200px" />
+			</div>
 			<vbox> 
 			<label value="idPropiedad" /> 
 			<label value="Categoria" /> 
@@ -65,7 +69,10 @@
 		</columns>
 		<rows>
 			<row>	
-			<image src="Imagenes/interior2.png" />
+			<div>
+			
+			<image src="Imagenes/interior2.png" height="200px"/>
+			</div>
 			
 			<vbox> 
 			<label value="idPropiedad" /> 
@@ -89,8 +96,32 @@
 			<column label="" width="70%"/>
 		</columns>
 		<rows>
+			<row>
+			<div>	
+			<image src="Imagenes/interior3.png" height="200px"/>
+			</div>
+			<vbox> 
+			<label value="idPropiedad" /> 
+			<label value="Categoria" /> 
+			<label value="Precio" /> 
+			<label value="Descripcion" /> 
+			<label value="Fecha" /> 
+			<label value="Activo" /> 
+			<label value="Direccion" /> 
+			</vbox>
+			
+			</row>
+		</rows>
+	</grid>		
+	
+		<grid>
+		<columns>
+			<column label="" width="30%"/>
+			<column label="" width="70%"/>
+		</columns>
+		<rows>
 			<row>	
-			<image src="Imagenes/interior3.png" />
+			<image src="Imagenes/interior4.png" height="200px"/>
 			
 			<vbox> 
 			<label value="idPropiedad" /> 
@@ -113,30 +144,7 @@
 		</columns>
 		<rows>
 			<row>	
-			<image src="Imagenes/interior4.png" />
-			
-			<vbox> 
-			<label value="idPropiedad" /> 
-			<label value="Categoria" /> 
-			<label value="Precio" /> 
-			<label value="Descripcion" /> 
-			<label value="Fecha" /> 
-			<label value="Activo" /> 
-			<label value="Direccion" /> 
-			</vbox>
-			
-			</row>
-		</rows>
-	</grid>		
-	
-		<grid>
-		<columns>
-			<column label="" width="30%"/>
-			<column label="" width="70%"/>
-		</columns>
-		<rows>
-			<row>	
-			<image src="Imagenes/interior5.png" />
+			<image src="Imagenes/interior5.png" height="200px"/>
 			
 			<vbox> 
 			<label value="idPropiedad" /> 
@@ -168,18 +176,17 @@
 </center>
 <west size="15%" >
 	<borderlayout>
-	 	<north size="10%" style="background:#FF9800">
-	 	</north>
-	 	<south size="90%" style="background:#8BC34A">
+	 	<north size="10%" style="background:#FF1400"></north>
+	 	<south size="90%" style="background:#F4F4F4">
 	 	</south>
 	 	 
 	</borderlayout>
 </west>
 <east size="15%" >
 	<borderlayout>
-	 	<north size="10%" style="background:#FF9800">
+	 	<north size="10%" style="background:#FF1400">
 	 	</north>
-	 	<south size="90%" style="background:#8BC34A">
+	 	<south size="90%" style="background:#F4F4F4">
 	 	</south>
 	</borderlayout>
 </east>
