@@ -39,12 +39,118 @@
 		</columns>
 		<rows>
 			<row>	
-			<image src="/Imagenes/casa.jpg" />
-			<label value="Ventas" />
+		
+			<image src="Imagenes/interior1.png" />
+			
+			<vbox> 
+			<label value="idPropiedad" /> 
+			<label value="Categoria" /> 
+			<label value="Precio" /> 
+			<label value="Descripcion" /> 
+			<label value="Fecha" /> 
+			<label value="Activo" /> 
+			<label value="Direccion" /> 
+			</vbox>
+			
 			</row>
 		</rows>
 	</grid>
 				
+				
+				
+	<grid>
+		<columns>
+			<column label="" width="30%"/>
+			<column label="" width="70%"/>
+		</columns>
+		<rows>
+			<row>	
+			<image src="Imagenes/interior2.png" />
+			
+			<vbox> 
+			<label value="idPropiedad" /> 
+			<label value="Categoria" /> 
+			<label value="Precio" /> 
+			<label value="Descripcion" /> 
+			<label value="Fecha" /> 
+			<label value="Activo" /> 
+			<label value="Direccion" /> 
+			</vbox>
+			
+		
+			
+			</row>
+		</rows>
+	</grid>
+	
+		<grid>
+		<columns>
+			<column label="" width="30%"/>
+			<column label="" width="70%"/>
+		</columns>
+		<rows>
+			<row>	
+			<image src="Imagenes/interior3.png" />
+			
+			<vbox> 
+			<label value="idPropiedad" /> 
+			<label value="Categoria" /> 
+			<label value="Precio" /> 
+			<label value="Descripcion" /> 
+			<label value="Fecha" /> 
+			<label value="Activo" /> 
+			<label value="Direccion" /> 
+			</vbox>
+			
+			</row>
+		</rows>
+	</grid>		
+	
+		<grid>
+		<columns>
+			<column label="" width="30%"/>
+			<column label="" width="70%"/>
+		</columns>
+		<rows>
+			<row>	
+			<image src="Imagenes/interior4.png" />
+			
+			<vbox> 
+			<label value="idPropiedad" /> 
+			<label value="Categoria" /> 
+			<label value="Precio" /> 
+			<label value="Descripcion" /> 
+			<label value="Fecha" /> 
+			<label value="Activo" /> 
+			<label value="Direccion" /> 
+			</vbox>
+			
+			</row>
+		</rows>
+	</grid>		
+	
+		<grid>
+		<columns>
+			<column label="" width="30%"/>
+			<column label="" width="70%"/>
+		</columns>
+		<rows>
+			<row>	
+			<image src="Imagenes/interior5.png" />
+			
+			<vbox> 
+			<label value="idPropiedad" /> 
+			<label value="Categoria" /> 
+			<label value="Precio" /> 
+			<label value="Descripcion" /> 
+			<label value="Fecha" /> 
+			<label value="Activo" /> 
+			<label value="Direccion" /> 
+			</vbox>
+			
+			</row>
+		</rows>
+	</grid>		
 	
 </groupbox> 
 </center>
