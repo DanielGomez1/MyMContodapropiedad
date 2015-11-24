@@ -1,0 +1,32 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<groupbox>
+		<vlayout>
+			<label value="${labels.lblBusqueda}"
+				style="font-size:20px;color:#8BC34A " />
+			<separator />
+			<label value="${labels.lblProposito}" />
+			<hlayout>
+				<radiogroup>
+					<radio label="${labels.lblVenta}" />
+					<radio label="${labels.lblArriendo}" />
+				</radiogroup>
+			</hlayout>
+			<separator />
+			<label value="${labels.lblTipoDePropiedad}" />
+			<radiogroup orient="vertical">
+				<radio label="${labels.lblCasa}" />
+				<radio label="${labels.lblApartamento}" />
+				<radio label="${labels.lblLocal}" />
+				<radio label="${labels.lblLote}" />
+			</radiogroup>
+			<separator />
+			<textbox value="${labels.lblPrecioMaximo}" />
+			<textbox value="${labels.lblPrecioMinimo}" />
+			<textbox value="${labels.lblCodigo}" />
+			<separator />
+			<button label="${labels.lblBuscar}" onClick=""
+				style="background:#8BC34A" width="100%" />
+		</vlayout>
+	</groupbox>
+</zk>
