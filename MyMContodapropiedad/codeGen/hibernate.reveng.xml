@@ -2,5 +2,9 @@
 <!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
 
 <hibernate-reverse-engineering>
-	<table catalog="" schema="" name="TABLE_0"></table>
+
+	<table-filter match-name="PROPIEDADES"
+		match-schema="SYSTEM">
+	</table-filter>
+	
 </hibernate-reverse-engineering>
