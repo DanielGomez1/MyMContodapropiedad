@@ -1,5 +1,5 @@
 <?page title="new page title" contentType="text/html;charset=UTF-8"?>
-<zk>
+<zk apply="com.mym.webapp.Ctl.inicioCtl">
 <hlayout>
 			    <image src="/Imagenes/Logo2.jpg" height="40px"></image>
 			    <label value="M y M Con toda propiedad" style="font-size:20px " />

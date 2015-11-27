@@ -13,6 +13,7 @@ import org.zkoss.zul.ListModel;
 import org.zkoss.zul.ListModelList;
 import org.zkoss.zul.Listitem;
 import org.zkoss.zul.ListitemRenderer;
+import org.zkoss.zul.Messagebox;
 import org.zkoss.zul.Radiogroup;
 
 import com.mym.webapp.Dto.inicioDto;
@@ -48,7 +49,7 @@ public class inicioCtl extends GenericForwardComposer implements ListitemRendere
 	}
 	
 	public void onClick$BtnBuscar(Event e){
-		System.out.println(RadProp.getSelectedItem());
+		Messagebox.show("Hola");
 	}
 
 	public void render(Listitem item, Object data, int index) throws Exception {

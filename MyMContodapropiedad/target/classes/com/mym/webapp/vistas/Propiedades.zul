@@ -1,7 +1,6 @@
 <?page title="${labels.lblPropiedades}" contentType="text/html;charset=UTF-8"?>
-<zk>
-	<borderlayout sclass="complex-layout"
-		apply="com.mym.webapp.Ctl.inicioCtl">
+<zk apply="com.mym.webapp.Ctl.inicioCtl">
+	<borderlayout sclass="complex-layout">
 		<north height="5%" style="background:#F7F4F4">
 			<hlayout style="float:right">
 				<button label="Adm">
