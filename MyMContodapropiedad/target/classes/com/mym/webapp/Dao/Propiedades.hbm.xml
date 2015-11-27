@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 24-nov-2015 22:24:07 by Hibernate Tools 4.3.1.Final -->
+<!-- Generated 26-nov-2015 22:42:13 by Hibernate Tools 4.3.1.Final -->
 <hibernate-mapping>
-    <class name="com.mym.webapp.Dao.Propiedades" table="PROPIEDADES" schema="SYSTEM" optimistic-lock="version">
+    <class name="Propiedades" table="PROPIEDADES" schema="SYSTEM" optimistic-lock="version">
         <id name="idpropiedad" type="big_decimal">
             <column name="IDPROPIEDAD" precision="22" scale="0" />
             <generator class="assigned" />
