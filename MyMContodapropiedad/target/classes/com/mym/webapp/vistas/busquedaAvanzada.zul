@@ -37,60 +37,64 @@
 			</groupbox>
 		<hlayout>
 			<vlayout>
-				<label value="Proposito: "/>
+				<label value="${labels.lblProposito}"/>
 				<radiogroup orient="vertical">
-				<radio label="Compra"/>
-				<radio label="Arrendamiento"/>
+				<radio label="${labels.lblVenta}"/>
+				<radio label="${labels.lblArriendo}"/>
 				</radiogroup>
 				<separator/>
 				
-				<label  value="Precio: "/>
-				<textbox value="Min"/>
-				<textbox value="Max"/>
+				<label  value="${labels.lblPrecio}"/>
+				<textbox value="${labels.lblPrecioMaximo}"/>
+				<textbox value="${labels.lblPrecioMinimo}"/>
 			</vlayout>
 			<vlayout>
-				<label value="Tipo de propiedad: " />
+				<label value="${labels.lblTipoDePropiedad}" />
 				<separator/>
 				<radiogroup orient="vertical">
 				<separator/>
-				<radio label="Casa"/>
+				<radio label="${labels.lblCasa}"/>
 				<separator/>
-				<radio label="Apartamento"/>
+				<radio label="${labels.lblApartamento}"/>
 				<separator/>
-				<radio label="Local"/>
+				<radio label="${labels.lblLocal}"/>
 				<separator/>
-				<radio label="Lote"/>
+				<radio label="${labels.lblLote}"/>
 				</radiogroup>
 			</vlayout>
 			<groupbox>
 			<hlayout>
 			<vlayout>
-			<label value="Comodidades: " />
+			<label value="${labels.lblComodidades}" />
 			<separator/>
-			<checkbox label="1-3 Habitaciones"/>
-			<checkbox label=">3 Habitaciones"/>
-			<checkbox label="1-2 Baños"/>
-			<checkbox label=">2 Baños"/>
-			<checkbox label="Jardin"/>
-			<checkbox label="Piscina"/>
+			<radiogroup orient="vertical">
+				<radio label="${labels.lblHabitaciones}"/>
+				<radio label="${labels.lblHabitaciones1}"/>
+			</radiogroup>
+			<radiogroup orient="vertical">
+				<radio label="${labels.lblBanios}"/>
+				<radio label="${labels.lblBanios1}"/>
+			</radiogroup>
+			<checkbox label="${labels.lblJardin}"/>
+			<checkbox label="${labels.lblPiscina}"/>
 			</vlayout>
 			<vlayout>
 			<separator/>
 			<separator/>
 			<separator/>
-			<checkbox label="Garaje"/>
-			<checkbox label="Cuarto Util"/>
-			<checkbox label="Red de Gas"/>
-			<checkbox label="Patio de Ropas"/>
-			<checkbox label="Juegos Infantiles"/>
-			<checkbox label="Unidad Cerrada"/>
+			<checkbox label="${labels.lblGaraje}"/>
+			<checkbox label="${labels.lblCuartoUtil}"/>
+			<checkbox label="${labels.lblRedGas}"/>
+			<checkbox label="${labels.lblPatio}"/>
+			<checkbox label="${labels.lblJuegos}"/>
+			<checkbox label="${labels.lblUnidad}"/>
 			</vlayout>		
 			</hlayout>
 			</groupbox>
 		</hlayout>
 		<hlayout>
-		<button label="Limpiar" onClick="" />
-		<button label="Buscar" onClick="" />
+		<button label="${labels.lblLimpiar}" onClick="" />
+		<button label="${labels.lblBuscar}" onClick="" />
 		</hlayout>
 		</vlayout>
 </center>
