@@ -8,12 +8,10 @@ import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.util.GenericForwardComposer;
 import org.zkoss.zul.Button;
-import org.zkoss.zul.Label;
 import org.zkoss.zul.ListModel;
 import org.zkoss.zul.ListModelList;
 import org.zkoss.zul.Listitem;
 import org.zkoss.zul.ListitemRenderer;
-import org.zkoss.zul.Messagebox;
 import org.zkoss.zul.Radiogroup;
 
 import com.mym.webapp.Dto.inicioDto;
@@ -28,7 +26,6 @@ import com.mym.webapp.ngc.inicioNgc;
 
 public class inicioCtl extends GenericForwardComposer implements ListitemRenderer {
 
-	private Button btn1;
 	private Button BtnBuscar; 
  	private Radiogroup RadProp;
  	private Radiogroup RadTipo;
@@ -49,7 +46,7 @@ public class inicioCtl extends GenericForwardComposer implements ListitemRendere
 	}
 	
 	public void onClick$BtnBuscar(Event e){
-		Messagebox.show("Hola");
+		System.out.println("hola mundo");
 	}
 
 	public void render(Listitem item, Object data, int index) throws Exception {

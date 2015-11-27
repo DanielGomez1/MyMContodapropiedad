@@ -1,6 +1,6 @@
 <?page title="new page title" contentType="text/html;charset=UTF-8"?>
-<zk apply="com.mym.webapp.Ctl.inicioCtl">
-	<groupbox>
+<zk >
+	<groupbox apply="com.mym.webapp.Ctl.inicioCtl">
 		<vlayout>
 			<label value="${labels.lblBusqueda}"
 				style="font-size:20px;color:#FF1400 " />
@@ -25,7 +25,7 @@
 			<textbox value="${labels.lblPrecioMinimo}" />
 			<textbox value="${labels.lblCodigo}" />
 			<separator />
-			<button id="BtnBuscar" label="${labels.lblBuscar}" onClick=""
+			<button id="BtnBuscar" label="${labels.lblBuscar}"
 				style="background:#FF1400" width="100%" />
 		</vlayout>
 	</groupbox>
