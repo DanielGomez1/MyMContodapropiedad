@@ -1,0 +1,118 @@
+<?page title="${labels.lblContacto}" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<borderlayout sclass="complex-layout"
+		apply="com.mym.webapp.Ctl.inicioCtl">
+		<north height="5%" style="background:#F7F4F4">
+			<hlayout style="float:right">
+				<button label="Adm">
+					<attribute name="onClick">
+					Executions.sendRedirect("aniadirPropiedad.zul");
+					</attribute>
+				</button>
+				<radiogroup>
+				<attribute name="onCheck"><![CDATA[
+                String localeValue = self.getSelectedItem().getValue();
+                Locale prefer_locale = localeValue.length() > 2 ? 
+                        new Locale(localeValue.substring(0,2),localeValue.substring(3)) : new Locale(localeValue);
+                session.setAttribute(org.zkoss.web.Attributes.PREFERRED_LOCALE, prefer_locale);
+                session.setAttribute("Demo_Locale", self.getSelectedIndex());
+                execution.sendRedirect("");
+                ]]></attribute>
+				<radio value="en" image="/Iconos/us.png"/>
+				<radio value="es" image="/Iconos/es.png"/>
+				<radio value="fr" image="/Iconos/fr.png"/>
+				</radiogroup>
+	 	</hlayout>
+</north>
+<center>
+
+
+	<borderlayout>
+	
+<north size="5%" style="background:#FF1400">
+	<include mode="instant" src="Norte.zul" />
+</north>
+<center autoscroll="true">	
+<groupbox> 
+	<grid>
+	
+	
+          <rows> 
+		<row>
+                    <label value="Nombre" width="150px" />
+                    <hlayout>
+                        <textbox value="@bind(fx.Nombre)"
+                            width="150px" tabindex="1" />
+                    </hlayout>
+                    <div>
+                        <label sclass="hightlight">ingrese el nombre </label>
+                    </div>                  
+                </row>
+                
+                <row>
+                    <label value="Telefono" width="150px" />
+                    <hlayout>
+                        <textbox value="@bind(fx.Telefono)"
+                            width="150px" tabindex="1" />
+                    </hlayout>
+                    <div>
+                        <label sclass="hightlight">ingrese el telefono</label>
+                    </div>                  
+                </row>
+                
+                 <row>
+                    <label value="correo electronico" width="150px" />
+                    <hlayout>
+                        <textbox value="@bind(fx.Correo)"
+                            width="150px" tabindex="1" />
+                    </hlayout>
+                    <div>
+                        <label sclass="hightlight">ingrese el correo electronico</label>
+                    </div>                  
+                </row>
+                
+                
+                <row>
+                   <button label="enviar" onClick="" />
+                    <div>
+                        <label sclass="hightlight">presione el boton para poder llamarte </label>
+                    </div>                  
+                </row>
+		</rows> 
+	</grid>
+				
+	
+</groupbox> 
+</center>
+	
+		
+		<west title="${labels.lblBusqueda}" size="20%" flex="true" maxsize="250" splittable="true" collapsible="true">
+               <include mode="instant" src="Busqueda.zul" />
+        </west>
+      <south>
+      	<vlayout style="background:#8B5A2B" >
+      		<label id="lblFooter1" value="${labels.lblFooter1}" />
+      		<label id="lblFooter2" value="${labels.lblFooter2}" />
+      	</vlayout>      
+      </south>
+</borderlayout>
+</center>
+<west size="15%" >
+	<borderlayout>
+	 	<north size="10%" style="background:#FF1400">
+	 	</north>
+	 	<south size="90%" style="background:#F4F4F4">
+	 	</south>
+	 	 
+	</borderlayout>
+</west>
+<east size="15%" >
+	<borderlayout>
+	 	<north size="10%" style="background:#FF1400">
+	 	</north>
+	 	<south size="90%" style="background:#F4F4F4">
+	 	</south>
+	</borderlayout>
+</east>
+</borderlayout>
+</zk>   

@@ -1,0 +1,96 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<hlayout>
+			    <image src="/Imagenes/Logo2.jpg" height="40px"></image>
+			    <label value="M y M Con toda propiedad" style="font-size:20px " />
+			    		
+			    <div class="menu">
+			     <menubar id="menubar" width="100%" style="background:#FF1400" >
+			<custom-attributes org.zkoss.zul.image.preload="true" />
+			<menuitem label="${labels.lblHome}" image="/Iconos/home.png" style="background:#FF1400;font-size:20px">
+				<attribute name="onClick">
+					Executions.sendRedirect("inicio.zul");
+				</attribute>
+			</menuitem>
+			<menuitem label="${labels.lblQuienesSomos}" image="/Iconos/question.png" style="background:#FF1400">
+				<attribute name="onClick">
+					Executions.sendRedirect("quienesSomos.zul");
+				</attribute>
+			</menuitem>
+			<menu label="${labels.lblPropiedades}" style="background:#FF1400" >
+				<attribute name="onClick">
+					Executions.sendRedirect("Propiedades.zul");
+				</attribute>
+				<menupopup>
+					<menu label="${labels.lblVentas}"  style="background:#FF1400" >
+						<attribute name="onClick">
+							Executions.sendRedirect("Propiedades.zul");
+						</attribute>
+						<menupopup>
+							<menuitem image="/Iconos/house.png" label="${labels.lblCasas}"  style="background:#FF9800">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}"  style="background:#FF1400">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}"  style="background:#FF1400">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}"  style="background:#FF1400">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+						</menupopup>
+					</menu>
+					<menu label="${labels.lblArrendamientos}" style="background:#FF1400" >
+						<attribute name="onClick">
+							Executions.sendRedirect("Propiedades.zul");
+						</attribute>			
+						<menupopup>
+							<menuitem image="/Iconos/house.png" label="${labels.lblCasas}"  style="background:#FF9800">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/building78.png" label="${labels.lblApartamentos}"  style="background:#FF1400">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/store.png" label="${labels.lblLocales}"  style="background:#FF1400">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+							<menuitem image="/Iconos/tree.png" label="${labels.lblLotes}"  style="background:#FF1400">
+								<attribute name="onClick">
+									Executions.sendRedirect("Propiedades.zul");
+								</attribute>
+							</menuitem>
+						</menupopup>
+					</menu>
+				</menupopup>
+			</menu>
+			<menuitem label="${labels.lblBusquedaAvanzada}" image="/Iconos/houseS.png" style="background:#FF1400">
+			<attribute name="onClick">
+					Executions.sendRedirect("busquedaAvanzada.zul");
+				</attribute>
+			</menuitem>
+			<menuitem label="${labels.lblContacto}" image="/Iconos/telephone.png" style="background:#FF1400">
+			<attribute name="onClick">
+					Executions.sendRedirect("contacto.zul");
+				</attribute>
+			</menuitem>
+		</menubar>
+				</div>
+			    
+	</hlayout>
+
+</zk>

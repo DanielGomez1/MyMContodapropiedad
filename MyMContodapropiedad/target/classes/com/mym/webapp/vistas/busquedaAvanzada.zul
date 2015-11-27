@@ -1,4 +1,4 @@
-<?page title="Añadir Propiedad" contentType="text/html;charset=UTF-8"?>
+<?page title="Busqueda avanzada" contentType="text/html;charset=UTF-8"?>
 <zk>
 	<borderlayout sclass="complex-layout"
 		apply="com.mym.webapp.Ctl.inicioCtl">
@@ -91,7 +91,7 @@
 		</hlayout>
 		<hlayout>
 		<button label="Limpiar" onClick="" />
-		<button label="Añadir" onClick="" />
+		<button label="Buscar" onClick="" />
 		</hlayout>
 		</vlayout>
 </center>

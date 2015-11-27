@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-nov-2015 22:24:07 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.mym.webapp.Dao.Propiedades" table="PROPIEDADES" schema="SYSTEM" optimistic-lock="version">
+        <id name="idpropiedad" type="big_decimal">
+            <column name="IDPROPIEDAD" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="categoria" type="string">
+            <column name="CATEGORIA" length="45" not-null="true">
+                <comment>contiene as categorias de las propiedades</comment>
+            </column>
+        </property>
+        <property name="precio" type="double">
+            <column name="PRECIO" precision="126" scale="0" not-null="true">
+                <comment>contiene los precios de las propiedades</comment>
+            </column>
+        </property>
+        <property name="descripcion" type="string">
+            <column name="DESCRIPCION" length="100" not-null="true">
+                <comment>contiene la descripcion de cada una de las propiedades</comment>
+            </column>
+        </property>
+        <property name="fechaingreso" type="date">
+            <column name="FECHAINGRESO" length="7" not-null="true">
+                <comment>contiene las fechas en la cual la propiedade se registro</comment>
+            </column>
+        </property>
+        <property name="activo" type="boolean">
+            <column name="ACTIVO" precision="1" scale="0" not-null="true">
+                <comment>1 para activo, 2 para inactivo</comment>
+            </column>
+        </property>
+        <property name="direccion" type="string">
+            <column name="DIRECCION" length="45" not-null="true">
+                <comment>contiene la direccion de la propiedad</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

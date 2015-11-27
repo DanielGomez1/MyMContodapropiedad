@@ -1,0 +1,81 @@
+<?page title="${labels.lblPropiedades}" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<borderlayout sclass="complex-layout"
+		apply="com.mym.webapp.Ctl.inicioCtl">
+		<north height="5%" style="background:#8BC34A">
+			<hlayout style="float:right">
+				<button label="Adm">
+					<attribute name="onClick">
+					Executions.sendRedirect("aniadirPropiedad.zul");
+					</attribute>
+				</button>
+				<radiogroup>
+				<attribute name="onCheck"><![CDATA[
+                String localeValue = self.getSelectedItem().getValue();
+                Locale prefer_locale = localeValue.length() > 2 ? 
+                        new Locale(localeValue.substring(0,2),localeValue.substring(3)) : new Locale(localeValue);
+                session.setAttribute(org.zkoss.web.Attributes.PREFERRED_LOCALE, prefer_locale);
+                session.setAttribute("Demo_Locale", self.getSelectedIndex());
+                execution.sendRedirect("");
+                ]]></attribute>
+				<radio value="en" image="/Iconos/us.png"/>
+				<radio value="es" image="/Iconos/es.png"/>
+				<radio value="fr" image="/Iconos/fr.png"/>
+				</radiogroup>
+	 </hlayout>
+</north>
+<center>
+	<borderlayout>
+	
+<north size="5%" style="background:#FF9800">
+	<include mode="instant" src="Norte.zul" />
+</north>
+<center autoscroll="true">	
+<groupbox> 
+	<grid>
+		<columns>
+			<column label="" width="30%"/>
+			<column label="" width="70%"/>
+		</columns>
+		<rows>
+			<row>	
+			<image src="/Imagenes/casa.jpg" />
+			<label value="Ventas" />
+			</row>
+		</rows>
+	</grid>
+				
+	
+</groupbox> 
+</center>
+	
+		<west title="${labels.lblBusqueda}" size="20%" flex="true" maxsize="250" splittable="true" collapsible="true">
+                <include mode="instant" src="Busqueda.zul" />
+        </west>
+      <south>
+      	<vlayout style="background:#8B5A2B" >
+      		<label id="lblFooter1" value="${labels.lblFooter1}" />
+      		<label id="lblFooter2" value="${labels.lblFooter2}" />
+      	</vlayout>      
+      </south>
+</borderlayout>
+</center>
+<west size="15%" >
+	<borderlayout>
+	 	<north size="10%" style="background:#FF9800">
+	 	</north>
+	 	<south size="90%" style="background:#8BC34A">
+	 	</south>
+	 	 
+	</borderlayout>
+</west>
+<east size="15%" >
+	<borderlayout>
+	 	<north size="10%" style="background:#FF9800">
+	 	</north>
+	 	<south size="90%" style="background:#8BC34A">
+	 	</south>
+	</borderlayout>
+</east>
+</borderlayout>
+</zk>
