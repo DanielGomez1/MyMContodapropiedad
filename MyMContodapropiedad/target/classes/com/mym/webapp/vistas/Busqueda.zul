@@ -7,14 +7,14 @@
 			<separator />
 			<label value="${labels.lblProposito}" />
 			<hlayout>
-				<radiogroup>
+				<radiogroup id="RadProp">
 					<radio label="${labels.lblVenta}" />
 					<radio label="${labels.lblArriendo}" />
 				</radiogroup>
 			</hlayout>
 			<separator />
 			<label value="${labels.lblTipoDePropiedad}" />
-			<radiogroup orient="vertical">
+			<radiogroup id="RadTipo" orient="vertical">
 				<radio label="${labels.lblCasa}" />
 				<radio label="${labels.lblApartamento}" />
 				<radio label="${labels.lblLocal}" />
@@ -25,7 +25,7 @@
 			<textbox value="${labels.lblPrecioMinimo}" />
 			<textbox value="${labels.lblCodigo}" />
 			<separator />
-			<button label="${labels.lblBuscar}" onClick=""
+			<button id="BtnBuscar" label="${labels.lblBuscar}" onClick=""
 				style="background:#FF1400" width="100%" />
 		</vlayout>
 	</groupbox>
